@@ -10,7 +10,7 @@ Made for Python 3. Python 2 is long past its EOL by now.
 I don't have anything like a "to get started" yet.
 
 
-== I'm Using GitHub Under Protest ==
+## I'm Using GitHub Under Protest
 
 This project is currently hosted on GitHub.  This is not ideal; GitHub is a
 proprietary, trade-secret system that is not Free, Libre, or Open Souce Software
