@@ -2,16 +2,9 @@ import webbrowser
 import os
 import sys
 
-try:
-    # Python 3
-    import configparser
-    from http import server
-    from urllib.parse import parse_qs
-except ImportError:
-    # Python 2
-    import ConfigParser as configparser
-    import BaseHTTPServer as server
-    from urlparse import parse_qs
+import configparser
+from http import server
+from urllib.parse import parse_qs
     
 from familysearch import FamilySearch
 
