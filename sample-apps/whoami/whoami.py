@@ -1,18 +1,9 @@
 # Python imports
-from __future__ import print_function
 import os
 import sys
 from getpass import getpass
-
-try:
-    # Python 3
-    import configparser
-    from urllib.error import HTTPError
-except ImportError:
-    # Python 2
-    import ConfigParser as configparser
-    from urllib2 import HTTPError
-    input = raw_input
+import configparser
+from urllib.error import HTTPError
 
 from familysearch import FamilySearch
 
