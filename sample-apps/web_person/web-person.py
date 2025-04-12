@@ -23,7 +23,7 @@ except AttributeError:
     port = config.get("server", "port")
     redirect = config.get("server", "redirect_uri")
 
-url = "http://localhost" + (":"+ port) if port is not "80" else ""
+url = "http://localhost" + (":"+ port if port is not "80" else "")
 ruri = ""
 for x in redirect[::-1]:
     ruri = x + ruri
