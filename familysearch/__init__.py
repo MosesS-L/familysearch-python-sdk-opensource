@@ -1,8 +1,6 @@
-# For PyLint users:
-# I'll get back to you to the recommeneded command.
-r"""This is a WIP, unofficial SDK for accessing
-the FamilySearch API.
-Currently designed to support Python 3.2+ and 2.6+.
+r"""This is a WIP, unofficial SDK for accessing the
+FamilySearch API, currently designed to support
+Python 3 versions.
 
 Example usage:
 
@@ -22,26 +20,12 @@ fs = FamilySearch('ClientApp/1.0', app_key, base='https://familysearch.org')
 fs.logout()
 """
 
-# Python imports
-
-
-try:
-    # Python 3
-    from urllib.request import Request as BaseRequest
-    from urllib.request import build_opener
-    from urllib.error import HTTPError
-    from urllib.parse import(urlsplit, urlunsplit, parse_qs, urlencode)
-except ImportError:
-    # Python 2
-    from urllib import urlencode
-    from urllib2 import Request as BaseRequest
-    from urllib2 import build_opener, HTTPError
-    from urlparse import(urlsplit, urlunsplit, parse_qs)
-
+from urllib.request import Request as BaseRequest
+from urllib.request import build_opener
+from urllib.error import HTTPError
+from urllib.parse import urlsplit, urlunsplit, parse_qs, urlencode
 import json
 import time
-
-# FamilySearch imports
 
 from familysearch.authentication import Authentication
 from familysearch.authorities import Authorities
@@ -62,9 +46,8 @@ from familysearch.user import User
 from familysearch.utilities import Utilities
 from familysearch.vocabularies import Vocabularies
 
-# Magic
 
-__version__ = '1.2.0'
+__version__ = '1.3.0'
 
 
 class Request(BaseRequest):
