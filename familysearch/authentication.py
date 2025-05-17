@@ -1,17 +1,9 @@
 """FamilySearch Authentication submodule"""
 # Python imports
 
-try:
-    # Python 3
-    from urllib.request import(build_opener, HTTPCookieProcessor)
-    from urllib.parse import(urlencode, parse_qs)
-    from http import server
-except ImportError:
-    # Python 2
-    from urllib import urlencode
-    from urlparse import parse_qs
-    from urllib2 import(build_opener, HTTPCookieProcessor)
-    import BaseHTTPServer as server
+from urllib.request import(build_opener, HTTPCookieProcessor)
+from urllib.parse import(urlencode, parse_qs)
+from http import server
 
 import webbrowser
 import json
