@@ -4,10 +4,8 @@ Test the base familysearch module contained in __init__.py
 """
 # import system modules
 import json
-try:
-    from urllib import request
-except ImportError:
-    import urllib2 as request
+
+from urllib import request
 
 # import util module to enable easier testing
 from test import util
