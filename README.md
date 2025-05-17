@@ -20,6 +20,6 @@ I urge you to read about the [Give up GitHub](https://GiveUpGitHub.org) campaign
 the [Software Freedom Conservancy](https://sfconservancy.org) to understand
 some of the reasons why GitHub is not a good place to host F[L]OSS projects.
 
-Any use of this project's code by GitHub Copilot, past, present, or future, as training
-data or as a source for output, is done without my permission. I do not consent to GitHub's
-use of this project's code in Copilot.
+Any use of this project's code by GitHub Copilot or any other AI model, past, present,
+or future, as training data or as a source for output, is done without my permission.
+I expressly refuse consent to GitHub's use of this project's code in Copilot.
