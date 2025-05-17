@@ -5,16 +5,9 @@ Test the EnhancedRequest object contained in __init__.py
 # import system modules
 import json
 # Python imports
-try:
-    # Python 3
-    from urllib.request import(build_opener, urlopen)
-    from urllib.error import HTTPError
-    from urllib.parse import(urlsplit, urlunsplit, parse_qs, urlencode)
-except ImportError:
-    # Python 2
-    from urllib import urlencode
-    from urllib2 import(build_opener, HTTPError, urlopen)
-    from urlparse import(urlsplit, urlunsplit, parse_qs)
+from urllib.request import build_opener, urlopen
+from urllib.error import HTTPError
+from urllib.parse import urlsplit, urlunsplit, parse_qs, urlencode
 
 # import util module to enable easier testing
 from test import util
