@@ -1,8 +1,8 @@
 """FamilySearch Authentication submodule"""
 # Python imports
 
-from urllib.request import(build_opener, HTTPCookieProcessor)
-from urllib.parse import(urlencode, parse_qs)
+from urllib.request import build_opener, HTTPCookieProcessor
+from urllib.parse import urlencode, parse_qs
 from http import server
 
 import webbrowser
@@ -10,7 +10,7 @@ import json
 
 # Magic
 
-class Authentication(object):
+class Authentication:
     def __init__(self):
         """https://familysearch.org/developers/docs/api/resources#authentication
         Set up the URLs for authentication.
